@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MCG - Massive CRUD Generator</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style_doc.css">
+	<!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">                				
+				<a href="" class="article"><h3>MGC</h3></a>
+            </div>
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#TOP">Introduction</a>
+                </li>
+                <li>
+                    <a href="#Overview_and_Features">Overview and Features</a>
+                </li>				
+                <li>
+                    <a href="#Installation_and_Runing_Program">Installation and Runing Program</a>
+                </li>
+                <li>
+                    <a href="#Setting_and_Licensed">Setting and Licensed</a>
+                </li>
+                <li>
+                    <a href="#Make_Massive_CRUD_data">Make Massive CRUD data</a>
+                </li>
+                <li>
+                    <a href="#Generate_Code">Generate Code</a>
+                </li>
+                <li>
+                    <a href="#How_to_use_the_sql_script_result">How to use the sql script result</a>
+                </li>
+				
+                <li>
+                    <a href="#File_Directory_Structure_Web_Server">File/Directory Structure Web Server</a>
+                </li>				
+				
+                <li>
+                    <a href="#Samples_PHP_Code_with_PDO_Connection">Samples PHP Code with PDO Connection</a>
+                </li>				
+                <li>
+                    <a href="#Samples_Standard_PHP_Code">Samples Standard PHP Code</a>
+                </li>
+                <li>
+                    <a href="#Samples_PHP_Code_with_Codeigniter_4">Samples PHP Code with Codeigniter 4</a>
+                </li>
+                <li>
+                    <a href="#Samples_at_FREE_webhosting">Samples at FREE webhosting</a>
+                </li>				
+            </ul>
+        </nav>
+        <!-- Page Content  -->
+        <div id="content">
+		
+
+
+            <h2 id="TOP">Introduction</h2>			
+
+<br>
+<h4>About me</h4>
+<p>
+Hi, I'm Yudhi from Indonesia, 
+<br>I'm developing tools to make it easier to make software, 
+<br>especially software for web development using PHP
+</p>
+<p>
+<span class="font-weight-bold">Maybe someone wants to try my program.</span> 
+<br>
+<br>This program is a kind of tool, which is to speed up the creation of CRUD script files
+which repeats itself in the same pattern. Such as View, Add, Edit, Delete, etc.
+The results of the CRUD script can be directly used or modified accordingly
+with need.
+<br>
+<br>This program is called MCG, which stands for Massive Crud Generator.
+Program is my original. Although there may be similarities with similar programs.
+<br>
+<br>Programs are in the form of EXE files and some are free and some are registered.
+<br>Whether it's free or registered, the content is the same.
+<br>What is registered is a form of your support and as our encouragement.
+<br>You can provide support/support/saweran/trakteer as our encouragement
+to produce new releases, with no strings attached / certain conditions.
+<br>
+<br>The target of this program is specifically for colleagues who are still learning
+script programming such as PHP, although it is possible to
+colleagues who are already proficient, or also for colleagues who want to try
+</p>
+<p>
+I am sharing my knowledge to help make office life a little less annoying ;)
+</p>
+<span class="font-weight-bold">Private message at Telegram:</span>
+<a href="https://t.me/yudhi_irawan">@yudhi_irawan</a>
+<br>
+
+<span class="font-weight-bold">Private activity feeds at Instagram:</span> 
+<a href="https://www.instagram.com/iam.yudhi_irawan">@iam.yudhi_irawan</a>
+<br><br><br>
+
+
+
+<h4>About Software</h4>			
+
+<span class="font-weight-bold">
+MCG - Massive CRUD Generator
+</span>
+<br>for mcg_005 - mcg_010 - mcg_011 - mcg_012
+<br><br>	
+		
+<p>
+Created by Yudhi Irawan<br>
+Initial created date : Dec 19, 2013<br>
+Last update Mar 10, 2022<br><br>
+
+<span class="font-weight-bold">Download Massive CRUD Generator on telegram and github link</span>
+<br><span class="font-weight-bold">MCG Application: </span>
+<i><a href="https://t.me/MCGFreeVersion">https://t.me/MCGFreeVersion</a></i>
+<br><span class="font-weight-bold">Testing: </span>
+<i><a href="https://github.com/yudhi-irawan/ci4mcg_testing">https://github.com/yudhi-irawan/ci4mcg_testing</a></i>
+<br><span class="font-weight-bold">Template: </span>
+<i><a href="https://github.com/yudhi-irawan/mcg-templates-ci4-lt3">https://github.com/yudhi-irawan/mcg-templates-ci4-lt3</a></i>
+<br>
+
+
+<br>
+<span class="font-weight-bold">Donation and Support link</span>
+<br><span class="font-weight-bold">Ko-fi: </span>
+<i>	
+<a href="https://ko-fi.com/MassiveCrudGenerator">https://ko-fi.com/MassiveCrudGenerator</a>
+<br><span class="font-weight-bold">Trakteer: </span>
+<a href="https://trakteer.id/MassiveCrudGenerator">https://trakteer.id/MassiveCrudGenerator</a>
+</i>
+<br><br>
+Thank you very much if you consider supporting me,
+it helps keep things free to use for everyone
+
+<br><br>
+Please follow us for information about new releases<br>
+Thanks you for using this tool.
+</p>
+            <div class="line"></div>
+			
+			
+			
+
+
+
+
+
+			
+            <h2 id="Overview_and_Features">Overview and Features</h2>			
+<ul>
+	<li>This <b>tool</b> is an EXE file and runs on the Windows platform 32/64 bit.</li>
+	
+	<li>This <b>tool</b> is a tool for programmers to speed up script file creation
+	the pattern is always the same or always repeats.</li>
+	
+	<li>This <b>tool</b> will generate a CRUD file of type SQL, especially for MySQL, namely:
+	View, Add, Edit and Delete scripts.</li>
+	
+	<li>The resulting script file can be used directly, or it can be edited as needed.</li>
+</ul>
+<b><i><a href="#TOP">Top Menu</a></i></b>
+            
+            <div class="line"></div>
+
+
+			
+			
+			
+            <h2 id="Installation_and_Runing_Program">Installation and Runing Program</h2>			
+
+            <ul>
+                <li>Run setup.exe file<span class="font-weight-bold"> or</span> extract setup.zip file</li>
+				<li>copy extract file to target directory. ex: d:\MCG</li>
+				<li>
+				
+Run EXE file 
+<br>System will ask you select option <b>'Include sample data'</b>
+<br>select <b>Yes</b> option if you will try or practice this tool, 
+<br>or select <b>No</b> option if you no need sample files
+<br><br>
+<b>Note:</b> Running this tool file will make .ini and generator.db file.
+				
+				</li>
+            </ul>
+			
+	<br>
+	<img src="jpg_doc/log_monitor_include_sample_data.jpg" alt="" style="width:500px;height:400px;">
+	<br><br>
+
+	<br>
+	<img src="jpg_doc/mainmenu.jpg" alt="" style="width:732px;height:538px;">
+	<br><br>
+
+
+			
+<b><i><a href="#TOP">Top Menu</a></i></b>
+
+
+            <div class="line"></div>
+
+
+            <h2 id="Setting_and_Licensed">Setting and Licensed</h2>
+
+<p>
+go to 'Setting and Licensed' menu and set what you want.
+<br>
+Directory Output : blank option will save output script same with main program.
+</p>
+
+<br>Sample setting output mcg_005:<br>
+	<br>
+	<img src="jpg_doc/setting_and_licensed_output_005.jpg" alt="" style="width:412px;height:270px;">
+	<br><br>
+
+<br>Sample setting output mcg_012:<br>
+	<br>
+	<img src="jpg_doc/setting_and_licensed_output_012.jpg" alt="" style="width:412px;height:270px;">
+	<br><br>
+	
+<br>
+Register licensed type:
+<br>
+	<br>
+	<img src="jpg_doc/setting_and_licensed_register.jpg" alt="" style="width:408px;height:369px;">
+	<br><br>
+
+<b>Note:</b>
+<br>Envato licensed type is reserved.
+<br>Never share your register number to other people.
+<br><br>
+
+	
+<b><i><a href="#TOP">Top Menu</a></i></b>
+
+
+
+            <div class="line"></div>
+
+
+            <h2 id="Make_Massive_CRUD_data">Make Massive CRUD data</h2>
+
+
+
+
+
+go to 'Source Data' menu. 
+<br>There are 3 sections and you must fill every section.
+<br>that sections are <b>Control-Menu, Grid-Menu, and Field-Menu.</b>
+
+<br><br>
+<h5>Control Menu:</h5>
+You are required to fill in the name of the file which will be the name of the output
+
+<br><br>
+<h5>Grid Menu:</h5>
+You are required to fill in the table name, the table name is used to store
+<br>fields created in the Field Menu.
+
+
+<br><br>
+<h5>Field Menu:</h5>
+Fieldname must be filled with data, then select the appropriate fieldtype.
+<br>Each table <b>must have ONE field</b> of type AUTOINC-PRIMARYKEY.
+<br>A field of type AUTOINC-PRIMARYKEY is a field of type INTEGER.
+<br>For the Attribute field, fill it with <b>HIDDEN</b> if Fieldtype is 
+<b>AUTOINC-PRIMARYKEY</b>.
+<br><br>
+
+
+<!-- from here! -->
+
+<h5>Example of data entry:</h5>
+<ul>
+
+	<li>Data-1</li>
+	<ul>
+		<li><b>Control Menu:</b></li>
+		<ul>
+			<li>File Name: sex</li>
+			<li>Title: Tabel Sex</li>
+			<li>Menu Icon: fa-circle</li>
+			<li>Menu Folder: TABLE</li>
+			<li>Description: Tabel Sex</li>
+		</ul>
+		<br>
+
+		<li><b>Grid Menu:</b></li>
+		<ul>
+			<li>Tablename: sex</li>
+			<li>Title: sex</li>
+		</ul>
+		<br>
+
+		<li><b>Field Menu:</b></li>
+		<ul>
+			<li>Fieldname: sex_id</li>
+			<li>Fieldtype: AUTOINC-PRIMARYKEY</li>
+			<li>Attribute: HIDDEN</li>
+			<li>Title: Sex ID</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: sex_desc</li>
+			<li>Fieldtype: VARCHAR</li>
+			<li>Attribute: NORMAL</li>
+			<li>Title: Sex Description</li>
+			<li>Validation - Data Is Unique: {"y","Data double."}</li>
+			<li>Validation - Data Required: {"y","Data required."}</li>
+			<li>Show at Lookup: YES</li>
+		</ul>
+		<br>
+
+	</ul>
+	<br>
+
+	<li>Data-2</li>
+	<ul>
+		<li><b>Control Menu:</b></li>
+		<ul>
+			<li>File Name: edu</li>
+			<li>Title: Table Education Level</li>
+			<li>Menu Icon: fa-circle</li>
+			<li>Menu Folder: TABLE</li>
+			<li>Description: Table Education Level</li>
+		</ul>
+		<br>
+
+		<li><b>Grid Menu:</b></li>
+		<ul>
+			<li>Tablename: edu</li>
+			<li>Title: edu</li>
+		</ul>
+		<br>
+
+		<li><b>Field Menu:</b></li>
+		<ul>
+			<li>Fieldname: edu_id</li>
+			<li>Fieldtype: AUTOINC-PRIMARYKEY</li>
+			<li>Attribute: HIDDEN</li>
+			<li>Title: Edu ID</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: edu_code</li>
+			<li>Fieldtype: VARCHAR</li>
+			<li>Attribute: NORMAL</li>
+			<li>Title: Edu Code</li>
+			<li>Validation - Data Is Unique: {"y","Data double."}</li>
+			<li>Validation - Data Required: {"y","Data required."}</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: edu_desc</li>
+			<li>Fieldtype: VARCHAR</li>
+			<li>Attribute: NORMAL</li>
+			<li>Title: Edu Description</li>
+			<li>Validation - Data Required: {"y","Data required."}</li>
+			<li>Show at Lookup: YES</li>
+		</ul>
+		<br>
+
+	</ul>
+	<br>
+
+	<li>Data-3</li>
+	<ul>
+		<li><b>Control Menu:</b></li>
+		<ul>
+			<li>File Name: emp</li>
+			<li>Title: Employee</li>
+			<li>Menu Icon: fa-circle</li>
+			<li>Menu Folder: MASTER</li>
+			<li>Description: Employee</li>
+		</ul>
+		<br>
+
+		<li><b>Grid Menu:</b></li>
+		<ul>
+			<li>Tablename: emp</li>
+			<li>Title: emp</li>
+		</ul>
+		<br>
+
+		<li><b>Field Menu:</b></li>
+		<ul>
+			<li>Fieldname: emp_id</li>
+			<li>Fieldtype: AUTOINC-PRIMARYKEY</li>
+			<li>Attribute: HIDDEN</li>
+			<li>Title: Emp ID</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: emp_name</li>
+			<li>Fieldtype: VARCHAR</li>
+			<li>Attribute: NORMAL</li>
+			<li>Title: Emp Name</li>
+			<li>Show at Lookup: YES</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: emp_bday</li>
+			<li>Fieldtype: DATE</li>
+			<li>Attribute: NORMAL</li>
+			<li>Title: Birth Day</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: sex_id</li>
+			<li>Fieldtype: LOOKUP-COMBO</li>
+			<li>Attribute: HIDDEN</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: sex_desc</li>
+			<li>Fieldtype: RELATION</li>
+			<li>Attribute: NORMAL</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: edu_code</li>
+			<li>Fieldtype: LOOKUP-COMBO</li>
+			<li>Attribute: HIDDEN</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: edu_desc</li>
+			<li>Fieldtype: RELATION</li>
+			<li>Attribute: NORMAL</li>
+		</ul>
+		<br>
+
+	</ul>
+	<br>
+
+</ul>
+
+
+<!-- to here! -->
+
+
+
+	
+	<img src="jpg_doc/source_data.jpg" alt="" style="width:700px;height:400px;">
+	<br><br>
+
+
+<b><i><a href="#TOP">Top Menu</a></i></b>
+
+
+
+            <div class="line"></div>
+
+
+            <h2 id="Generate_Code">Generate Code</h2>
+
+
+Data will be craeated if no mistake in Source Data. You can see at Log Monitor.
+<br>Fix your error, and repeat again this proccess.
+<br>File result will be created at Directory Output.
+<br><br>
+	<img src="jpg_doc/generate.jpg" alt="">
+	
+<br><br>
+	<img src="jpg_doc/log_monitor_generate.jpg" alt="" style="width:600px;height:400px;">
+
+
+<br><br><br><br>
+Output result to www directory:
+<br><br>
+	<img src="jpg_doc/output_result.jpg" alt="" style="width:600px;height:400px;">
+
+
+
+<br><br><b><i><a href="#TOP">Top Menu</a></i></b>
+
+            <div class="line"></div>
+
+
+            <h2 id="How_to_use_the_sql_script_result">How to use SQL script result</h2>
+
+<ul>
+	<li>Open your favourite database-tool, create database and called name:<b> mcg_db</b></li>
+	<li>run or copy paste script from result MGC tool: <b>~merge_table_all.sql</b></li>
+	<br>
+	<img src="jpg_doc/run_table.jpg" alt="" style="width:700px;height:400px;">
+	<br><br>
+	<li>run or copy paste <b>~merge_sql_all.sql</b></li>
+	<br>
+	<img src="jpg_doc/run_sql.jpg" alt="" style="width:700px;height:400px;">
+	<br>	
+</ul>
+<br>
+
+<h5>There are two ways for testing SQL script from MCG output</h5>
+<ul>
+<li>1. Common command:</li>
+<pre>
+
+INSERT INTO sex (sex_id, sex_desc) VALUES
+(1, 'Laki-laki'),
+(2, 'Perempuan');
+
+
+INSERT INTO edu (edu_id, edu_code, edu_desc) VALUES
+(1, 'TK', 'Taman Kanak-kanak'),
+(2, 'SD', 'Sekolah Dasar'),
+(3, 'SMP', 'Sekolah Menengah Pertama'),
+(4, 'SMU', 'Sekolah Menengah Umum'),
+(5, 'UNIV', 'Universitas');
+
+
+UPDATE sex SET
+	sex_desc='Male'
+WHERE 
+	sex_id=1
+		
+
+DELETE FROM sex
+WHERE 
+	sex_id=1
+
+
+SELECT sex.sex_id, sex.sex_desc
+FROM sex
+
+
+</pre>
+<li>2. Calling script result:</li>
+<pre>
+
+CALL sex_one_add(1, 'Laki-laki');
+CALL sex_one_add(2, 'Perempuan');
+
+CALL sex_one_edit(1, 'Male');
+
+CALL sex_one_delete(1);
+
+SELECT * from  sex_one_view;
+
+<pre>
+</ul>
+<b>Note: </b>you must create MySql database and called name:<b> mcg_db</b>
+<br><br>
+
+
+
+			<b><i><a href="#TOP">Top Menu</a></i></b>
+
+            <div class="line"></div>
+
+
+
+            <h2 id="File_Directory_Structure_Web_Server">File/Directory Structure Web Server</h2>
+
+
+<br>
+<span class="font-weight-bold">Structure mcg_005:</span>
+<br>
+	<img src="jpg_doc/directory_structure_005.jpg" alt="" style="width:400px;height:500px;">
+	<br>	
+
+
+<br><br>
+
+
+
+			<b><i><a href="#TOP">Top Menu</a></i></b>
+
+            <div class="line"></div>
+
+
+
+
+
+            <h2 id="Samples_PHP_Code_with_PDO_Connection">Samples PHP Code with PDO Connection</h2>
+
+<p>
+This samples use a <b>PDO connection</b>, 
+to enable PDO connection in <b>php.ini</b> file, 
+<br>you have to uncomment the line becomes:
+<ul>
+	<li>extension=pdo_mysql</li>
+	<li>extension=pdo_pgsql</li>
+</ul>
+Then restart your web server.
+</p>
+
+<br>Samples at directory mcg_testing
+<br>Copy that samples to your webserver at target directory:
+<br>httdocs or maybe www
+<br>
+<br>you can call in your browser with: 
+<br>
+<i><b>	
+<br><a href="http://localhost/mcg_testing/mcg_005/sex.php">http://localhost/mcg_testing/mcg_005/sex.php</a>
+<br><a href="http://localhost/mcg_testing/mcg_005/edu.php">http://localhost/mcg_testing/mcg_005/edu.php</a>
+<br><a href="http://localhost/mcg_testing/mcg_005/emp.php">http://localhost/mcg_testing/mcg_005/emp.php</a>
+<br>
+
+</b></i>
+
+
+<br><b>Note: </b>you must create MySql database and called name:<b> mcg_db</b>
+<br>or you can change databasename then set file inc/conn.php
+
+			<br><br><b><i><a href="#TOP">Top Menu</a></i></b>
+
+            <div class="line"></div>
+
+
+            <h2 id="Samples_Standard_PHP_Code">Samples Standard PHP Code</h2>
+
+<pre>
+
+		foreach ($rows as $row){
+			if($row["sex_id"] == null || $row["sex_id"] == "") $row["sex_id"] = "0";
+			if($row["sex_desc"] == null) $row["sex_desc"] = "";
+
+			$sql = "CALL sex_one_edit";
+			$sql .= " (";
+			$sql .= ":sex_id";
+			$sql .= ",:sex_desc";
+			$sql .= ")";
+
+			$rs = $myconn->prepare($sql);
+			$rs->bindParam(':sex_id', $row['sex_id']);
+			$rs->bindParam(':sex_desc', $row['sex_desc']);
+			$rs->execute();
+		}
+				
+</pre>
+
+			<br><br><b><i><a href="#TOP">Top Menu</a></i></b>
+
+            <div class="line"></div>
+
+
+
+            <h2 id="Samples_PHP_Code_with_Codeigniter_4">Samples PHP Code with Codeigniter 4</h2>
+
+<ul>
+<li>Controllers</li>
+<pre>
+
+	public function saveedit_one($id)
+	{
+		$arrResult=$this->Sex_model->saveedit_one([
+			'sex_id' => $id
+			, 'sex_desc' => $this->request->getVar('sex_desc')
+        ]);
+		session()->setFlashdata('pesan', 'Data berhasil diubah.');
+		return redirect()->to('/sex');
+	}	
+	
+</pre>
+<li>Models</li>
+<pre>
+
+    public function saveedit_one($arrdata)
+	{
+		$sql_edit = " CALL Sex_one_edit";
+		$sql_edit.= " (";
+		$sql_edit.= "'".$arrdata['sex_id']."'";
+		$sql_edit.= ",'".$arrdata['sex_desc']."'";
+		$sql_edit.= ")";
+		return $this->db->query($sql_edit)->getRowArray();
+	}
+	
+</pre>
+</ul>
+
+<b><i><a href="#TOP">Top Menu</a></i></b>
+
+<div class="line"></div>
+
+
+
+<h2 id="Samples_at_FREE_webhosting">Samples at FREE webhosting</h2>
+
+<i><b>	
+<br><a href="https://mcg-testing.000webhostapp.com/mcg_005/sex.php">https://mcg-testing.000webhostapp.com/mcg_005/sex.php</a>
+<br><a href="https://mcg-testing.000webhostapp.com/mcg_005/edu.php">https://mcg-testing.000webhostapp.com/mcg_005/edu.php</a>
+<br><a href="https://mcg-testing.000webhostapp.com/mcg_005/emp.php">https://mcg-testing.000webhostapp.com/mcg_005/emp.php</a>
+<br>
+<br>
+
+
+
+
+
+
+
+
+<b><i><a href="#TOP">Top Menu</a></i></b>
+
+
+            <div class="line"></div>
+
+<i>
+Contact me for further assistance
+<br>---------------------------------
+<br>
+<span class="font-weight-bold">Telegram:</span>
+<a href="https://t.me/yudhi_irawan">@yudhi_irawan</a>
+<br>
+Please introduce yourself.
+
+
+</i>
+
+<br><br><b><i><a href="#TOP">Top Menu</a></i></b>
+<div class="line"></div>
+
+
+
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+	
+</body>
+</html>

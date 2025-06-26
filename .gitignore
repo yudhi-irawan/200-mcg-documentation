@@ -1,0 +1,5 @@
+*.exe
+*.log
+checkstatic.txt
+~catatan-github.txt
+ErrorLog.htm

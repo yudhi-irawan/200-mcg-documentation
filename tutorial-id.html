@@ -95,7 +95,7 @@
                         </div>
                     </div>
                 </div>
-				
+<!--				
 				<div class="col-lg-12 col-sm-5 col-xs-12">
 					<br>	
 					<div class="media cont-line">
@@ -127,12 +127,511 @@
 						</div>
 					</div>							
 				</div>
-				
+-->				
             </div>
         </div>
     </div>
 	
 
+	<!-- section -->
+    <div class="section layout_padding theme_bg">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
+                    <h3 class="small_heading">Meng-Install dan menjalankan Tool MCG</h3>					
+					<p>		
+						<br>1. Download file MCG pada menu DOWNLOAD
+						<br>2. buat folder c:\MCG atau d:\MCG 
+						<br>3. extract zip file yang tadi di-download didalam folder c:\MCG. contoh file yang harus di extract: _016_laravel_lte3_mysql-Last update 2006-01-25.zip 
+						<br>4. jalankan exe file _016_laravel_lte3_mysql.exe
+						<br>
+						<br>Karena tool MCG masih baru, system akan memberikan option <b>'Demo - sample data'</b> untuk dipilih yaitu:
+						<br>pilihan <b>no. 1</b> jika anda tidak memerlukan contoh data
+						<br>pilihlah <b>no. 2</b> untuk demo kali ini, OK?
+						<br><br>
+						<b>Note:</b> 
+						<br>Menjalankan file tool ini akan membuat file .ini dan generator.db
+						<br>Jika pernah menginstal MCG, backup terlebih dahulu file .ini dan generator.db atau boleh di rename
+						<br>Menghapus file generator.db akan mengulagi option ini
+					</p>
+                </div>
+				
+                <div class="col-lg-6 col-md-6 col-sm-12 text_align_center">
+                    <div class="full">
+                        <img class="img-responsive" src="images/demo_sample_data.jpg" alt="#" />
+						<br><br>
+						<img class="img-responsive" src="images/log_monitor_include_sample_data.jpg" alt="#" />
+                    </div>
+                </div>
+				
+            </div>
+        </div>
+    </div>
+    <!-- end section -->
+
+    <br>
+    <!-- section -->
+    <div class="section layout_padding theme_bg">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
+                    <h3 class="small_heading">Setting dan Lisensi </h3>
+					<p>
+					click menu 'Setting and Licensed' dan set apa yang kita inginkan.
+					<br>
+					Directory Output : jika dikosongkan akan menyimpan hasil script pada directory yang sama dengan program.
+					</p>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 text_align_left white_fonts">
+                    <div class="full">
+					
+						<p>Contoh setting output untuk tool _016_laravel_lte3_mysql default:</p>
+                        <img class="img-responsive" src="images/setting_and_licensed_output_016.jpg" alt="#" />
+						<br><br><br>
+						
+						<p>Contoh setting output untuk tool _016_laravel_lte3_mysql yang sudah di-edit:</p>
+                        <img class="img-responsive" src="images/setting_and_licensed_output_016_edit.jpg" alt="#" />
+						<br><br><br>
+						
+						<p>Contoh setting output untuk program mcg_005:</p>
+                        <img class="img-responsive" src="images/setting_and_licensed_output_005.jpg" alt="#" />
+						<br><br><p>Contoh setting output untuk program mcg_012:</p>
+						<img class="img-responsive" src="images/setting_and_licensed_output_012.jpg" alt="#" />
+
+						<br><br><p>Program ter-registrasi dan ter-lisensi:</p>
+						<img class="img-responsive" src="images/setting_and_licensed_register.jpg" alt="#" />						
+						<br><br>
+						<b>Note:</b>
+						<br>Lisensi Envato masih dalam rencana.
+						<br>Jangan men-share nomor registrasi anda kepada orang lain.						
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end section -->
+
+	<br>
+    <!-- section -->
+    <div class="section layout_padding theme_bg">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
+                    <h3 class="small_heading">Membuat script CRUD yang banyak sekali</h3>
+					
+					<p>
+						click menu 'Source Data'. 
+						<br>Ada 3 bagian menu dan anda harus mengisinya disetiap bagian menu tersebut. 
+						<br>bagian menu itu adalah <b>Control-Menu, Grid-Menu, and Field-Menu.</b>
+					</p>
+
+					<br><br>
+					<h2 class="small_heading">Control Menu:</h2>
+					<p>
+					Anda harus mengisi nama file yang akan menjadi nama output
+					</p>
+					<br><br>
+
+					<h2 class="small_heading">Grid Menu:</h2>
+					<p>
+						Anda diharuskan mengisi nama tabel, nama tabel digunakan untuk menyimpan field yang dibuat pada Field-Menu.
+					</p>
+					
+					<br><br>
+					<h2 class="small_heading">Field Menu:</h2>
+					<p>
+						Fieldname harus diisi dengan data, kemudian pilih fieldtype yang sesuai.
+						<br>Setiap tabel <b>harus memiliki SATU field</b> dengan tipe AUTOINC-PRIMARYKEY.
+						<br>Field tipe AUTOINC-PRIMARYKEY adalah field tipe INTEGER.
+						<br>Untuk kolom Attribute, isi dengan <b>HIDDEN</b> jika Fieldtype adalah <b>AUTOINC-PRIMARYKEY.</b>						
+					</p>
+					<br><br>
+
+
+<!-- from here! -->
+
+
+<h2>Contoh masukan data:</h2>
+<ul>
+
+	<li>Data-1</li>
+	<ul>
+		<li><b>Control Menu:</b></li>
+		<ul>
+			<li>File Name: sex</li>
+			<li>Title: Tabel Sex</li>
+			<li>Description: Tabel Sex</li>
+		</ul>
+		<br>
+
+		<li><b>Grid Menu:</b></li>
+		<ul>
+			<li>Tablename: sex</li>
+			<li>Title: Sex</li>
+		</ul>
+		<br>
+
+		<li><b>Field Menu:</b></li>
+		<ul>
+			<li>Fieldname: id</li>
+			<li>Fieldtype: AUTOINC-PRIMARYKEY</li>
+			<li>Attribute: HIDDEN</li>
+			<li>Title: Sex ID</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: description</li>
+			<li>Fieldtype: VARCHAR</li>
+			<li>Attribute: NORMAL</li>
+			<li>Title: Sex Description</li>
+			<li>Validation - Data Is Unique: {"y","Data double."}</li>
+			<li>Validation - Data Required: {"y","Data required."}</li>
+			<li>Show at Lookup: YES</li>
+		</ul>
+		<br>
+
+	</ul>
+	<br>
+
+	<li>Data-2</li>
+	<ul>
+		<li><b>Control Menu:</b></li>
+		<ul>
+			<li>File Name: edu</li>
+			<li>Title: Table Education Level</li>
+			<li>Description: Table Education Level</li>
+		</ul>
+		<br>
+
+		<li><b>Grid Menu:</b></li>
+		<ul>
+			<li>Tablename: edu</li>
+			<li>Title: Edu</li>
+		</ul>
+		<br>
+
+		<li><b>Field Menu:</b></li>
+		<ul>
+			<li>Fieldname: id</li>
+			<li>Fieldtype: AUTOINC-PRIMARYKEY</li>
+			<li>Attribute: HIDDEN</li>
+			<li>Title: Edu ID</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: code</li>
+			<li>Fieldtype: VARCHAR</li>
+			<li>Attribute: NORMAL</li>
+			<li>Title: Edu Code</li>
+			<li>Validation - Data Is Unique: {"y","Data double."}</li>
+			<li>Validation - Data Required: {"y","Data required."}</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: description</li>
+			<li>Fieldtype: VARCHAR</li>
+			<li>Attribute: NORMAL</li>
+			<li>Title: Edu Description</li>
+			<li>Validation - Data Required: {"y","Data required."}</li>
+			<li>Show at Lookup: YES</li>
+		</ul>
+		<br>
+
+	</ul>
+	<br>
+
+	<li>Data-3</li>
+	<ul>
+		<li><b>Control Menu:</b></li>
+		<ul>
+			<li>File Name: emp</li>
+			<li>Title: Employee</li>
+			<li>Description: Employee</li>
+		</ul>
+		<br>
+
+		<li><b>Grid Menu:</b></li>
+		<ul>
+			<li>Tablename: emp</li>
+			<li>Title: Emp</li>
+		</ul>
+		<br>
+
+		<li><b>Field Menu:</b></li>
+		<ul>
+			<li>Fieldname: id</li>
+			<li>Fieldtype: AUTOINC-PRIMARYKEY</li>
+			<li>Attribute: HIDDEN</li>
+			<li>Title: Emp ID</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: name</li>
+			<li>Fieldtype: VARCHAR</li>
+			<li>Attribute: NORMAL</li>
+			<li>Title: Emp Name</li>
+			<li>Validation - Data Required: {"Y","Data NAMA harus diisi."}</li>
+			<li>Show at Lookup: YES</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: bday</li>
+			<li>Fieldtype: DATE</li>
+			<li>Attribute: NORMAL</li>
+			<li>Title: Birth Day</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: sex_id</li>
+			<li>Fieldtype: LOOKUP-COMBO</li>
+			<li>Attribute: HIDDEN</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: sex_description</li>
+			<li>Fieldtype: RELATION</li>
+			<li>Attribute: NORMAL</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: edu_code</li>
+			<li>Fieldtype: LOOKUP-COMBO</li>
+			<li>Attribute: NORMAL</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: edu_description</li>
+			<li>Fieldtype: RELATION</li>
+			<li>Attribute: NORMAL</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: alamat</li>
+			<li>Fieldtype: VARCHAR</li>
+			<li>Attribute: NORMAL</li>
+			<li>Title: Alamat</li>
+			<li>Validation - Data Required: {"Y","Data ALAMAT harus diisi."}</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: kota</li>
+			<li>Fieldtype: VARCHAR</li>
+			<li>Attribute: NORMAL</li>
+			<li>Title: Kota</li>
+			<li>Validation - Data Required: {"Y","Data KOTA harus diisi."}</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: provinsi</li>
+			<li>Fieldtype: VARCHAR</li>
+			<li>Attribute: NORMAL</li>
+			<li>Title: Provinsi</li>
+			<li>Validation - Data Required: {"Y","Data PROVINSI harus diisi."}</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: goldarah</li>
+			<li>Fieldtype: ENUM</li>
+			<li>Attribute: NORMAL</li>
+			<li>Title: Golongan Darah</li>
+			<li>Data Enum: -;A;B;AB;O</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: insertnew</li>
+			<li>Fieldtype: ENUM</li>
+			<li>Attribute: NORMAL</li>
+			<li>Title: Insert Words</li>
+			<li>Data Enum: -;Line-1;Line-2;Line3</li>
+		</ul>
+		<br>
+
+	</ul>
+	<br>
+
+</ul>
+
+
+<!-- to here! -->
+
+
+					
+                </div>
+				
+                <div class="col-lg-6 col-md-6 col-sm-12 text_align_center">
+                    <div class="full">
+                        <img class="img-responsive" src="images/source_data.jpg" alt="#" />
+                    </div>
+                </div>
+				
+            </div>
+        </div>
+    </div>
+    <!-- end section -->
+	
+	<br>
+    <!-- section -->
+    <div class="section layout_padding theme_bg">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
+                    <h3 class="small_heading">Generate Code</h3>
+					<p>
+						Data akan dibuat jika tidak ada kesalahan dalam Source Data. Anda dapat melihat di Log Monitor.
+						<br>Jika ada kesalahan, perbaiki kesalahan Anda, dan ulangi lagi proses ini.
+						<br>Hasil file akan dibuat di Directory Output.
+					</p>
+                </div>
+				
+                <div class="col-lg-6 col-md-6 col-sm-12 text_align_left white_fonts">
+                    <div class="full">
+                        <img class="img-responsive" src="images/generate.jpg" alt="#" />
+						<br><br>
+						<img class="img-responsive" src="images/log_monitor_generate.jpg" alt="#" />
+						
+						<br><br><br><br>
+						Hasil output untuk _016_laravel_lte3_mysql:
+						<br><br>
+						<img class="img-responsive" src="images/output_result_016.jpg" alt="#" />
+                    </div>
+                </div>
+				
+            </div>
+        </div>
+    </div>
+    <!-- end section -->	
+	
+	<br>
+    <!-- section -->
+    <div class="section layout_padding theme_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-6 col-sm-12 text_align_left white_fonts">
+                    <div class="full">
+					
+						<h3 class="small_heading">Bagaimana menggunakan SQL script hasil dari output MCG</h3>
+						<p>
+							Buka database-tool favourite anda, create database kemudian beri nama database-nya dengan nama:<b> mcg_db</b>
+						</p>
+						<p>	
+							run atau copy paste script dari hasil output MGC tool: <b>1_merge_table_all.sql</b>
+						</p>
+                        <img class="img-responsive" src="images/run_table.jpg" alt="#" />
+						
+						<br><br>
+						<p>jika anda menggunakan PhpMyAdmin</p>
+						<img class="img-responsive" src="images/run_table_phpmyadmin.jpg" alt="#" />
+						
+						<br><br>
+						<p>run atau copy paste <b>2_merge_sql_all.sql</p>
+						<img class="img-responsive" src="images/run_sql.jpg" alt="#" />
+
+						<br><br>
+						<p>jika anda menggunakan PhpMyAdmin</p>
+						<img class="img-responsive" src="images/run_sql_phpmyadmin.jpg" alt="#" />
+						
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end section -->
+
+	<br>
+    <!-- section -->
+    <div class="section layout_padding theme_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-6 col-sm-12 text_align_left white_fonts">
+                    <div class="full">					
+						<h3 class="small_heading">Bagaimana mengetes SQL script hasil dari output MCG</h3>
+						
+
+						
+<p>Ada 2 cara untuk mengetes SQL script dari output MCG</p>
+<b>1. Perintah umum:</b>
+
+
+<br>
+<br>INSERT INTO sex (id, description) VALUES
+<br>(1, 'Laki-laki'),
+<br>(2, 'Perempuan');
+<br>
+<br>INSERT INTO edu (id, code, description) VALUES
+<br>(1, 'TK', 'Taman Kanak-kanak'),
+<br>(2, 'SD', 'Sekolah Dasar'),
+<br>(3, 'SMP', 'Sekolah Menengah Pertama'),
+<br>(4, 'SMU', 'Sekolah Menengah Umum'),
+<br>(5, 'UNIV', 'Universitas');
+<br>
+<br>UPDATE sex SET
+<br>&nbsp;&nbsp;description='Male'
+<br>WHERE 
+<br>&nbsp;&nbsp;id=1
+<br>
+<br>DELETE FROM sex
+<br>WHERE 
+<br>&nbsp;&nbsp;id=1
+<br>
+<br>SELECT sex.id, sex.description
+<br>FROM sex
+<br>
+<br><br><b>2. Memanggil script hasil dari output MCG:</b>
+<br>
+<br>CALL sex_one_add(1, 'Laki-laki');
+<br>CALL sex_one_add(2, 'Perempuan');
+<br>
+<br>CALL sex_one_edit(1, 'Male');
+<br>
+<br>CALL sex_one_delete(1);
+<br>
+<br>SELECT * from  sex_one_view;
+<br><br><br><b>jika anda menggunakan PhpMyAdmin</b>
+<br><br>						
+<img class="img-responsive" src="images/run_call_sex_add_phpmyadmin.jpg" alt="#" />				
+<br><br><b>Note: </b>anda harus membuat MySql database dengan nama database:<b> mcg_db</b>
+
+
+
+						
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end section -->
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+	
+	<br>
     <!-- section -->
     <div class="section layout_padding theme_bg">
         <div class="container">
@@ -185,8 +684,8 @@
 						<br>dan copy/move 
 						<br>to d:\mcg-ci4-testing-master (overwrite semua)
 						<br>
-						<br>buat table dari file: ~merge_table_all.sql
-						<br>buat view atau procedure dari file: ~merge_sql_all.sql
+						<br>buat table dari file: 1_merge_table_all.sql
+						<br>buat view atau procedure dari file: 2_merge_sql_all.sql
 						<br> 
 						<br> 
 						<br>jalankan command:
@@ -212,466 +711,8 @@
     </div>
     <!-- end section -->
 	
-	<br>
-	<!-- section -->
-    <div class="section layout_padding theme_bg">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
-                    <h3 class="small_heading">Meng-Install dan menjalankan Program MCG</h3>
-					
-					<p>					
-						<br>1. extract zip file. contoh: mcg_012-last_update-2022-07-13.zip
-						<br>2. copy directory installer
-						<br>3. pergi ke directory installer dan jalankan SETUP.exe
-						<br>4. pergi ke directory d:\MCG
-						<br>5. jalankan exe file
-						<br>
-						<br>System akan memberikan option untuk dipilih yaitu <b>'Include sample data'</b>
-						<br>pilih <b>no. 1</b> jika anda tidak memerlukan contoh data
-						<br><br>
-						<b>Note:</b> 
-						<br>Menjalankan file tool ini akan membuat file .ini dan generator.db.
-						Jika pernah menginstal MCG, backup terlebih dahulu file .ini dan generator.db atau boleh di rename
-					</p>
-                </div>
-				
-                <div class="col-lg-6 col-md-6 col-sm-12 text_align_center">
-                    <div class="full">
-                        <img class="img-responsive" src="images/demo_sample_data1.jpg" alt="#" />
-						<br><br>
-						<img class="img-responsive" src="images/demo_sample_data2.jpg" alt="#" />
-						<br><br>
-						<img class="img-responsive" src="images/log_monitor_include_sample_data.jpg" alt="#" />
-                    </div>
-                </div>
-				
-            </div>
-        </div>
-    </div>
-    <!-- end section -->
-
-
-<br>
     <!-- section -->
-    <div class="section layout_padding theme_bg">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
-                    <h3 class="small_heading">Setting dan Lisensi </h3>
-					<p>
-					click menu 'Setting and Licensed' dan set apa yang kita inginkan.
-					<br>
-					Directory Output : jika dikosongkan akan menyimpan hasil script pada directory yang sama dengan program.
-					</p>
-                </div>
-
-                <div class="col-lg-6 col-md-6 col-sm-12 text_align_left white_fonts">
-                    <div class="full">
-						<p>Contoh setting output untuk program mcg_005:</p>
-                        <img class="img-responsive" src="images/setting_and_licensed_output_005.jpg" alt="#" />
-						<br><br><p>Contoh setting output untuk program mcg_012:</p>
-						<img class="img-responsive" src="images/setting_and_licensed_output_012.jpg" alt="#" />
-
-						<br><br><p>Program ter-registrasi dan ter-lisensi:</p>
-						<img class="img-responsive" src="images/setting_and_licensed_register.jpg" alt="#" />						
-						<br><br>
-						<b>Note:</b>
-						<br>Lisensi Envato masih dalam rencana.
-						<br>Jangan men-share nomor registrasi anda kepada orang lain.						
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end section -->
-	
-	<br>
-    <!-- section -->
-    <div class="section layout_padding theme_bg">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
-                    <h3 class="small_heading">Membuat script CRUD yang banyak sekali</h3>
-					
-					<p>
-						click menu 'Source Data'. 
-						<br>Ada 3 bagian menu dan anda harus mengisinya disetiap bagian menu tersebut. 
-						<br>bagian menu itu adalah <b>Control-Menu, Grid-Menu, and Field-Menu.</b>
-					</p>
-
-					<br><br>
-					<h2 class="small_heading">Control Menu:</h2>
-					<p>
-					Anda harus mengisi nama file yang akan menjadi nama output
-					</p>
-					<br><br>
-
-					<h2 class="small_heading">Grid Menu:</h2>
-					<p>
-						Anda diharuskan mengisi nama tabel, nama tabel digunakan untuk menyimpan field yang dibuat pada Field-Menu.
-					</p>
-					
-					<br><br>
-					<h2 class="small_heading">Field Menu:</h2>
-					<p>
-						Fieldname harus diisi dengan data, kemudian pilih fieldtype yang sesuai.
-						<br>Setiap tabel <b>harus memiliki SATU field</b> dengan tipe AUTOINC-PRIMARYKEY.
-						<br>Field tipe AUTOINC-PRIMARYKEY adalah field tipe INTEGER.
-						<br>Untuk kolom Attribute, isi dengan <b>HIDDEN</b> jika Fieldtype adalah <b>AUTOINC-PRIMARYKEY.</b>						
-					</p>
-					<br><br>
-
-
-<!-- from here! -->
-
-
-<h2 class="small_heading">Contoh masukan data:</h2>
-<ul>
-
-	<li>Data-1</li>
-	<ul>
-		<li><b>Control Menu:</b></li>
-		<ul>
-			<li>File Name: sex</li>
-			<li>Title: Tabel Sex</li>
-			<li>Menu Icon: fa-circle</li>
-			<li>Menu Folder: TABLE</li>
-			<li>Description: Tabel Sex</li>
-		</ul>
-		<br>
-
-		<li><b>Grid Menu:</b></li>
-		<ul>
-			<li>Tablename: sex</li>
-			<li>Title: sex</li>
-		</ul>
-		<br>
-
-		<li><b>Field Menu:</b></li>
-		<ul>
-			<li>Fieldname: sex_id</li>
-			<li>Fieldtype: AUTOINC-PRIMARYKEY</li>
-			<li>Attribute: HIDDEN</li>
-			<li>Title: Sex ID</li>
-		</ul>
-		<br>
-		<ul>
-			<li>Fieldname: sex_desc</li>
-			<li>Fieldtype: VARCHAR</li>
-			<li>Attribute: NORMAL</li>
-			<li>Title: Sex Description</li>
-			<li>Validation - Data Is Unique: {"y","Data double."}</li>
-			<li>Validation - Data Required: {"y","Data required."}</li>
-			<li>Show at Lookup: YES</li>
-		</ul>
-		<br>
-
-	</ul>
-	<br>
-
-	<li>Data-2</li>
-	<ul>
-		<li><b>Control Menu:</b></li>
-		<ul>
-			<li>File Name: edu</li>
-			<li>Title: Table Education Level</li>
-			<li>Menu Icon: fa-circle</li>
-			<li>Menu Folder: TABLE</li>
-			<li>Description: Table Education Level</li>
-		</ul>
-		<br>
-
-		<li><b>Grid Menu:</b></li>
-		<ul>
-			<li>Tablename: edu</li>
-			<li>Title: edu</li>
-		</ul>
-		<br>
-
-		<li><b>Field Menu:</b></li>
-		<ul>
-			<li>Fieldname: edu_id</li>
-			<li>Fieldtype: AUTOINC-PRIMARYKEY</li>
-			<li>Attribute: HIDDEN</li>
-			<li>Title: Edu ID</li>
-		</ul>
-		<br>
-		<ul>
-			<li>Fieldname: edu_code</li>
-			<li>Fieldtype: VARCHAR</li>
-			<li>Attribute: NORMAL</li>
-			<li>Title: Edu Code</li>
-			<li>Validation - Data Is Unique: {"y","Data double."}</li>
-			<li>Validation - Data Required: {"y","Data required."}</li>
-		</ul>
-		<br>
-		<ul>
-			<li>Fieldname: edu_desc</li>
-			<li>Fieldtype: VARCHAR</li>
-			<li>Attribute: NORMAL</li>
-			<li>Title: Edu Description</li>
-			<li>Validation - Data Required: {"y","Data required."}</li>
-			<li>Show at Lookup: YES</li>
-		</ul>
-		<br>
-
-	</ul>
-	<br>
-
-	<li>Data-3</li>
-	<ul>
-		<li><b>Control Menu:</b></li>
-		<ul>
-			<li>File Name: emp</li>
-			<li>Title: Employee</li>
-			<li>Menu Icon: fa-circle</li>
-			<li>Menu Folder: MASTER</li>
-			<li>Description: Employee</li>
-		</ul>
-		<br>
-
-		<li><b>Grid Menu:</b></li>
-		<ul>
-			<li>Tablename: emp</li>
-			<li>Title: emp</li>
-		</ul>
-		<br>
-
-		<li><b>Field Menu:</b></li>
-		<ul>
-			<li>Fieldname: emp_id</li>
-			<li>Fieldtype: AUTOINC-PRIMARYKEY</li>
-			<li>Attribute: HIDDEN</li>
-			<li>Title: Emp ID</li>
-		</ul>
-		<br>
-		<ul>
-			<li>Fieldname: emp_name</li>
-			<li>Fieldtype: VARCHAR</li>
-			<li>Attribute: NORMAL</li>
-			<li>Title: Emp Name</li>
-			<li>Show at Lookup: YES</li>
-		</ul>
-		<br>
-		<ul>
-			<li>Fieldname: emp_bday</li>
-			<li>Fieldtype: DATE</li>
-			<li>Attribute: NORMAL</li>
-			<li>Title: Birth Day</li>
-		</ul>
-		<br>
-		<ul>
-			<li>Fieldname: sex_id</li>
-			<li>Fieldtype: LOOKUP-COMBO</li>
-			<li>Attribute: HIDDEN</li>
-		</ul>
-		<br>
-		<ul>
-			<li>Fieldname: sex_desc</li>
-			<li>Fieldtype: RELATION</li>
-			<li>Attribute: NORMAL</li>
-		</ul>
-		<br>
-		<ul>
-			<li>Fieldname: edu_code</li>
-			<li>Fieldtype: LOOKUP-COMBO</li>
-			<li>Attribute: HIDDEN</li>
-		</ul>
-		<br>
-		<ul>
-			<li>Fieldname: edu_desc</li>
-			<li>Fieldtype: RELATION</li>
-			<li>Attribute: NORMAL</li>
-		</ul>
-		<br>
-
-	</ul>
-	<br>
-
-</ul>
-
-
-<!-- to here! -->
-
-
-					
-                </div>
-				
-                <div class="col-lg-6 col-md-6 col-sm-12 text_align_center">
-                    <div class="full">
-                        <img class="img-responsive" src="images/source_data.jpg" alt="#" />
-                    </div>
-                </div>
-				
-            </div>
-        </div>
-    </div>
-    <!-- end section -->
-	
-	<br>
-    <!-- section -->
-    <div class="section layout_padding theme_bg">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
-                    <h3 class="small_heading">Generate Code</h3>
-					<p>
-						Data akan dibuat jika tidak ada kesalahan dalam Source Data. Anda dapat melihat di Log Monitor.
-						<br>Jika ada kesalahan, perbaiki kesalahan Anda, dan ulangi lagi proses ini.
-						<br>Hasil file akan dibuat di Directory Output.
-					</p>
-                </div>
-				
-                <div class="col-lg-6 col-md-6 col-sm-12 text_align_left white_fonts">
-                    <div class="full">
-                        <img class="img-responsive" src="images/generate.jpg" alt="#" />
-						<br><br>
-						<img class="img-responsive" src="images/log_monitor_generate.jpg" alt="#" />
-						
-						<br><br><br><br>
-						Hasil output di www directory untuk mcg_005:
-						<br><br>
-						<img class="img-responsive" src="images/output_result_005.jpg" alt="#" />
-                    </div>
-                </div>
-				
-            </div>
-        </div>
-    </div>
-    <!-- end section -->	
-
-
-	<br>
-    <!-- section -->
-    <div class="section layout_padding theme_bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-6 col-sm-12 text_align_left white_fonts">
-                    <div class="full">
-					
-						<h3 class="small_heading">Bagaimana menggunakan SQL script hasil dari output MCG</h3>
-						<p>
-							Buka database-tool favourite anda, create database kemudian beri nama database-nya dengan nama:<b> mcg_db</b>
-						</p>
-						<p>	
-							run atau copy paste script dari hasil output MGC tool: <b>~merge_table_all.sql</b>
-						</p>
-                        <img class="img-responsive" src="images/run_table.jpg" alt="#" />
-						
-						<br><br>
-						<p>jika anda menggunakan PhpMyAdmin</p>
-						<img class="img-responsive" src="images/run_table_phpmyadmin.jpg" alt="#" />
-						
-						<br><br>
-						<p>run atau copy paste <b>~merge_sql_all.sql</p>
-						<img class="img-responsive" src="images/run_sql.jpg" alt="#" />
-
-						<br><br>
-						<p>jika anda menggunakan PhpMyAdmin</p>
-						<img class="img-responsive" src="images/run_sql_phpmyadmin.jpg" alt="#" />
-						
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
-                    
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end section -->
-	
-	<br>
-    <!-- section -->
-    <div class="section layout_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-6 col-sm-12 text_align_left">
-                    <div class="full">
-					
-						<h3 class="small_heading">Bagaimana mengetes SQL script hasil dari output MCG</h3>
-						
-							Ada 2 cara untuk mengetes SQL script dari output MCG
-							
-							<br><br><b>1. Perintah umum:</b>
-
-<pre>
-
-INSERT INTO sex (sex_id, sex_desc) VALUES
-(1, 'Laki-laki'),
-(2, 'Perempuan');
-
-
-INSERT INTO edu (edu_id, edu_code, edu_desc) VALUES
-(1, 'TK', 'Taman Kanak-kanak'),
-(2, 'SD', 'Sekolah Dasar'),
-(3, 'SMP', 'Sekolah Menengah Pertama'),
-(4, 'SMU', 'Sekolah Menengah Umum'),
-(5, 'UNIV', 'Universitas');
-
-
-UPDATE sex SET
-	sex_desc='Male'
-WHERE 
-	sex_id=1
-		
-
-DELETE FROM sex
-WHERE 
-	sex_id=1
-
-
-SELECT sex.sex_id, sex.sex_desc
-FROM sex
-
-
-</pre>
-
-<br><br><b>2. Memanggil script hasil dari output MCG:</b>
-<pre>
-
-CALL sex_one_add(1, 'Laki-laki');
-CALL sex_one_add(2, 'Perempuan');
-
-CALL sex_one_edit(1, 'Male');
-
-CALL sex_one_delete(1);
-
-SELECT * from  sex_one_view;
-
-</pre>
-	
-
-<br><br><b>jika anda menggunakan PhpMyAdmin</b>
-						<br><br>
-						
-						<img class="img-responsive" src="images/run_call_sex_add_phpmyadmin.jpg" alt="#" />
-						
-<br><br><b>Note: </b>anda harus membuat MySql database dengan nama database:<b> mcg_db</b>
-
-
-
-						
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
-                    
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end section -->
-	
-	
-    <!-- section -->
+	<!--
     <div class="section layout_padding theme_bg">
         <div class="container">
             <div class="row">
@@ -697,10 +738,12 @@ SELECT * from  sex_one_view;
             </div>
         </div>
     </div>
+	-->
     <!-- end section -->
 	
 	
     <!-- section -->
+	<!--
     <div class="section layout_padding">
         <div class="container">
             <div class="row">
@@ -750,10 +793,12 @@ Setelah mengubahnya kemudian restart web server anda.
             </div>
         </div>
     </div>
+	-->
     <!-- end section -->
 
 
     <!-- section -->
+	<!--
     <div class="section layout_padding">
         <div class="container">
             <div class="row">
@@ -790,10 +835,12 @@ Setelah mengubahnya kemudian restart web server anda.
             </div>
         </div>
     </div>
+	-->
     <!-- end section -->
 
 
     <!-- section -->
+	<!--
     <div class="section layout_padding">
         <div class="container">
             <div class="row">
@@ -843,6 +890,7 @@ Setelah mengubahnya kemudian restart web server anda.
             </div>
         </div>
     </div>
+	-->
     <!-- end section -->
 	
 	<!--  ------------------------------------------------------------------------- -->

@@ -95,7 +95,7 @@
                         </div>
                     </div>
                 </div>
-				
+<!--				
 				<div class="col-lg-12 col-sm-5 col-xs-12">
 					<br>	
 					<div class="media cont-line">
@@ -127,11 +127,509 @@
 						</div>
 					</div>							
 				</div>
-				
+-->				
             </div>
         </div>
     </div>
 
+
+    <!-- section -->
+    <div class="section layout_padding theme_bg">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
+                    <h3 class="small_heading">Installing and Running the MCG Tool</h3>					
+					<p>		
+						<br>1. Download the MCG file from the DOWNLOAD menu
+						<br>2. Create a folder, for example: c:\MCG or d:\MCG
+						<br>3. Extract the downloaded ZIP file into the c:\MCG folder. Example of a file to extract: _016_laravel_lte3_mysql-Last update 2006-01-25.zip 
+						<br>4. Run the EXE file: _016_laravel_lte3_mysql.exe						
+						<br>
+						<br>Since MCG is still new, the system will provide an option called <b>'Demo – sample data'</b>:
+						<br>- Choose <b>Option 1</b> if you do not need sample data
+						<br>- Choose <b>Option 2</b> for this demo, OK?
+						<br><br>
+						<b>Notes:</b>
+						<br>Running this tool will create two files: .ini and generator.db
+						<br>If you have previously installed MCG, make sure to backup or rename your existing .ini and generator.db files
+						<br>Deleting the generator.db file will reset the options and prompt you again
+					</p>
+                </div>
+				
+                <div class="col-lg-6 col-md-6 col-sm-12 text_align_center">
+                    <div class="full">
+                        <img class="img-responsive" src="images/demo_sample_data.jpg" alt="#" />
+						<br><br>
+						<img class="img-responsive" src="images/log_monitor_include_sample_data.jpg" alt="#" />
+                    </div>
+                </div>
+				
+            </div>
+        </div>
+    </div>
+    <!-- end section -->
+	
+    <br>
+    <!-- section -->
+    <div class="section layout_padding theme_bg">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
+                    <h3 class="small_heading">Setting and Licensed </h3>
+					<p>
+					go to 'Setting and Licensed' menu and set what you want.
+					<br>
+					Directory Output : blank option will save output script same with main program.
+					</p>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 text_align_left white_fonts">
+                    <div class="full">
+					
+						<p>Sample setting output for tool _016_laravel_lte3_mysql default:</p>
+                        <img class="img-responsive" src="images/setting_and_licensed_output_016.jpg" alt="#" />
+						<br><br><br>
+						
+						<p>Sample setting output for tool _016_laravel_lte3_mysql edited:</p>
+                        <img class="img-responsive" src="images/setting_and_licensed_output_016_edit.jpg" alt="#" />
+						<br><br><br>
+						
+						<p>Sample setting output for mcg_005:</p>
+                        <img class="img-responsive" src="images/setting_and_licensed_output_005.jpg" alt="#" />
+						<br><br><p>Sample setting output for mcg_012:</p>
+						<img class="img-responsive" src="images/setting_and_licensed_output_012.jpg" alt="#" />
+
+						<br><br><p>Register licensed type:</p>
+						<img class="img-responsive" src="images/setting_and_licensed_register.jpg" alt="#" />						
+						<br><br>
+						<b>Note:</b>
+						<br>Envato licensed type is reserved.
+						<br>Never share your register number to other people.						
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end section -->	
+	
+	<br>
+    <!-- section -->
+    <div class="section layout_padding theme_bg">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
+                    <h3 class="small_heading">Make Massive CRUD data</h3>
+					
+					<p>
+						go to 'Source Data' menu. 
+						<br>There are 3 sections and you must fill every section.
+						<br>that sections are <b>Control-Menu, Grid-Menu, and Field-Menu.</b>
+					</p>
+
+					<br><br>
+					<h2 class="small_heading">Control Menu:</h2>
+					<p>
+					You are required to fill in the name of the file which will be the name of the output
+					</p>
+					<br><br>
+
+					<h2 class="small_heading">Grid Menu:</h2>
+					<p>
+						You are required to fill in the table name, the table name is used to store fields created in the Field-Menu.
+					</p>
+					
+					<br><br>
+					<h2 class="small_heading">Field Menu:</h2>
+					<p>
+						Fieldname must be filled with data, then select the appropriate fieldtype.
+						<br>Each table <b>must have ONE field</b> of type AUTOINC-PRIMARYKEY.
+						<br>A field of type AUTOINC-PRIMARYKEY is a field of type INTEGER.
+						<br>For the Attribute field, fill it with <b>HIDDEN</b> if Fieldtype is <b>AUTOINC-PRIMARYKEY</b>.
+					</p>
+					<br><br>
+
+
+<!-- from here! -->
+
+
+<h2>Example of data entry:</h2>
+<ul>
+
+	<li>Data-1</li>
+	<ul>
+		<li><b>Control Menu:</b></li>
+		<ul>
+			<li>File Name: sex</li>
+			<li>Title: Tabel Sex</li>
+			<li>Description: Tabel Sex</li>
+		</ul>
+		<br>
+
+		<li><b>Grid Menu:</b></li>
+		<ul>
+			<li>Tablename: sex</li>
+			<li>Title: Sex</li>
+		</ul>
+		<br>
+
+		<li><b>Field Menu:</b></li>
+		<ul>
+			<li>Fieldname: id</li>
+			<li>Fieldtype: AUTOINC-PRIMARYKEY</li>
+			<li>Attribute: HIDDEN</li>
+			<li>Title: Sex ID</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: description</li>
+			<li>Fieldtype: VARCHAR</li>
+			<li>Attribute: NORMAL</li>
+			<li>Title: Sex Description</li>
+			<li>Validation - Data Is Unique: {"y","Data double."}</li>
+			<li>Validation - Data Required: {"y","Data required."}</li>
+			<li>Show at Lookup: YES</li>
+		</ul>
+		<br>
+
+	</ul>
+	<br>
+
+	<li>Data-2</li>
+	<ul>
+		<li><b>Control Menu:</b></li>
+		<ul>
+			<li>File Name: edu</li>
+			<li>Title: Table Education Level</li>
+			<li>Description: Table Education Level</li>
+		</ul>
+		<br>
+
+		<li><b>Grid Menu:</b></li>
+		<ul>
+			<li>Tablename: edu</li>
+			<li>Title: Edu</li>
+		</ul>
+		<br>
+
+		<li><b>Field Menu:</b></li>
+		<ul>
+			<li>Fieldname: id</li>
+			<li>Fieldtype: AUTOINC-PRIMARYKEY</li>
+			<li>Attribute: HIDDEN</li>
+			<li>Title: Edu ID</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: code</li>
+			<li>Fieldtype: VARCHAR</li>
+			<li>Attribute: NORMAL</li>
+			<li>Title: Edu Code</li>
+			<li>Validation - Data Is Unique: {"y","Data double."}</li>
+			<li>Validation - Data Required: {"y","Data required."}</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: description</li>
+			<li>Fieldtype: VARCHAR</li>
+			<li>Attribute: NORMAL</li>
+			<li>Title: Edu Description</li>
+			<li>Validation - Data Required: {"y","Data required."}</li>
+			<li>Show at Lookup: YES</li>
+		</ul>
+		<br>
+
+	</ul>
+	<br>
+
+	<li>Data-3</li>
+	<ul>
+		<li><b>Control Menu:</b></li>
+		<ul>
+			<li>File Name: emp</li>
+			<li>Title: Employee</li>
+			<li>Description: Employee</li>
+		</ul>
+		<br>
+
+		<li><b>Grid Menu:</b></li>
+		<ul>
+			<li>Tablename: emp</li>
+			<li>Title: Emp</li>
+		</ul>
+		<br>
+
+		<li><b>Field Menu:</b></li>
+		<ul>
+			<li>Fieldname: id</li>
+			<li>Fieldtype: AUTOINC-PRIMARYKEY</li>
+			<li>Attribute: HIDDEN</li>
+			<li>Title: Emp ID</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: name</li>
+			<li>Fieldtype: VARCHAR</li>
+			<li>Attribute: NORMAL</li>
+			<li>Title: Emp Name</li>
+			<li>Validation - Data Required: {"Y","Data NAMA harus diisi."}</li>
+			<li>Show at Lookup: YES</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: bday</li>
+			<li>Fieldtype: DATE</li>
+			<li>Attribute: NORMAL</li>
+			<li>Title: Birth Day</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: sex_id</li>
+			<li>Fieldtype: LOOKUP-COMBO</li>
+			<li>Attribute: HIDDEN</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: sex_description</li>
+			<li>Fieldtype: RELATION</li>
+			<li>Attribute: NORMAL</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: edu_code</li>
+			<li>Fieldtype: LOOKUP-COMBO</li>
+			<li>Attribute: NORMAL</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: edu_description</li>
+			<li>Fieldtype: RELATION</li>
+			<li>Attribute: NORMAL</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: alamat</li>
+			<li>Fieldtype: VARCHAR</li>
+			<li>Attribute: NORMAL</li>
+			<li>Title: Alamat</li>
+			<li>Validation - Data Required: {"Y","Data ALAMAT harus diisi."}</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: kota</li>
+			<li>Fieldtype: VARCHAR</li>
+			<li>Attribute: NORMAL</li>
+			<li>Title: Kota</li>
+			<li>Validation - Data Required: {"Y","Data KOTA harus diisi."}</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: provinsi</li>
+			<li>Fieldtype: VARCHAR</li>
+			<li>Attribute: NORMAL</li>
+			<li>Title: Provinsi</li>
+			<li>Validation - Data Required: {"Y","Data PROVINSI harus diisi."}</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: goldarah</li>
+			<li>Fieldtype: ENUM</li>
+			<li>Attribute: NORMAL</li>
+			<li>Title: Golongan Darah</li>
+			<li>Data Enum: -;A;B;AB;O</li>
+		</ul>
+		<br>
+		<ul>
+			<li>Fieldname: insertnew</li>
+			<li>Fieldtype: ENUM</li>
+			<li>Attribute: NORMAL</li>
+			<li>Title: Insert Words</li>
+			<li>Data Enum: -;Line-1;Line-2;Line3</li>
+		</ul>
+		<br>
+
+	</ul>
+	<br>
+
+</ul>
+
+
+
+<!-- to here! -->
+
+
+					
+                </div>
+				
+                <div class="col-lg-6 col-md-6 col-sm-12 text_align_center">
+                    <div class="full">
+                        <img class="img-responsive" src="images/source_data.jpg" alt="#" />
+                    </div>
+                </div>
+				
+            </div>
+        </div>
+    </div>
+    <!-- end section -->
+	
+	<br>
+    <!-- section -->
+    <div class="section layout_padding theme_bg">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
+                    <h3 class="small_heading">Generate Code</h3>
+					<p>
+						Data will be craeated if no mistake in Source Data. You can see at Log Monitor.
+						<br>Fix your error, and repeat again this proccess.
+						<br>File result will be created at Directory Output.
+					</p>
+                </div>
+				
+                <div class="col-lg-6 col-md-6 col-sm-12 text_align_left white_fonts">
+                    <div class="full">
+                        <img class="img-responsive" src="images/generate.jpg" alt="#" />
+						<br><br>
+						<img class="img-responsive" src="images/log_monitor_generate.jpg" alt="#" />
+						
+						<br><br><br><br>
+						Output result for _016_laravel_lte3_mysql:
+						<br><br>
+						<img class="img-responsive" src="images/output_result_016.jpg" alt="#" />
+                    </div>
+                </div>
+				
+            </div>
+        </div>
+    </div>
+    <!-- end section -->
+
+	<br>
+    <!-- section -->
+    <div class="section layout_padding theme_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-6 col-sm-12 text_align_left white_fonts">
+                    <div class="full">
+					
+						<h3 class="small_heading">How to use SQL script result from MCG output</h3>
+						<p>
+							Open your favourite database-tool, create database and called name:<b> mcg_db</b>
+						</p>
+						<p>	
+							run or copy paste script from result MGC tool: <b>1_merge_table_all.sql</b>
+						</p>
+                        <img class="img-responsive" src="images/run_table.jpg" alt="#" />
+						
+						<br><br>
+						<p>if you use PhpMyAdmin</p>
+						<img class="img-responsive" src="images/run_table_phpmyadmin.jpg" alt="#" />
+						
+						<br><br>
+						<p>run or copy paste <b>2_merge_sql_all.sql</p>
+						<img class="img-responsive" src="images/run_sql.jpg" alt="#" />
+
+						<br><br>
+						<p>if you use PhpMyAdmin</p>
+						<img class="img-responsive" src="images/run_sql_phpmyadmin.jpg" alt="#" />
+						
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end section -->
+	
+	<br>
+    <!-- section -->
+    <div class="section layout_padding theme_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-6 col-sm-12 text_align_left white_fonts">
+                    <div class="full">
+					
+						<h3 class="small_heading">How to test SQL script result from MCG output</h3>
+						
+						
+<p>There are 2 ways for testing SQL script from MCG output</p>
+<b>1. Common command:</b>
+
+
+<br>
+<br>INSERT INTO sex (id, description) VALUES
+<br>(1, 'Laki-laki'),
+<br>(2, 'Perempuan');
+<br>
+<br>INSERT INTO edu (id, code, description) VALUES
+<br>(1, 'TK', 'Taman Kanak-kanak'),
+<br>(2, 'SD', 'Sekolah Dasar'),
+<br>(3, 'SMP', 'Sekolah Menengah Pertama'),
+<br>(4, 'SMU', 'Sekolah Menengah Umum'),
+<br>(5, 'UNIV', 'Universitas');
+<br>
+<br>UPDATE sex SET
+<br>&nbsp;&nbsp;description='Male'
+<br>WHERE 
+<br>&nbsp;&nbsp;id=1
+<br>
+<br>DELETE FROM sex
+<br>WHERE 
+<br>&nbsp;&nbsp;id=1
+<br>
+<br>SELECT sex.id, sex.description
+<br>FROM sex
+<br>
+<br><br><b>2. Calling script result from MCG output:</b>
+<br>
+<br>CALL sex_one_add(1, 'Laki-laki');
+<br>CALL sex_one_add(2, 'Perempuan');
+<br>
+<br>CALL sex_one_edit(1, 'Male');
+<br>
+<br>CALL sex_one_delete(1);
+<br>
+<br>SELECT * from  sex_one_view;
+<br><br><br><b>if you use PhpMyAdmin</b>
+<br><br>						
+<img class="img-responsive" src="images/run_call_sex_add_phpmyadmin.jpg" alt="#" />				
+<br><br><b>Note: </b>you must create MySql database and called name:<b> mcg_db</b>
+
+
+
+				
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end section -->	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<br>
     <!-- section -->
     <div class="section layout_padding theme_bg">
         <div class="container">
@@ -184,8 +682,8 @@
 						<br>and copy/move 
 						<br>to d:\mcg-ci4-testing-master (overwrite all)
 						<br>
-						<br>create table from file: ~merge_table_all.sql
-						<br>create view or procedure from file: ~merge_sql_all.sql
+						<br>create table from file: 1_merge_table_all.sql
+						<br>create view or procedure from file: 2_merge_sql_all.sql
 						<br> 
 						<br> 
 						<br>run command:
@@ -209,467 +707,10 @@
             </div>
         </div>
     </div>
-    <!-- end section -->
-	
-	<br>
-    <!-- section -->
-    <div class="section layout_padding theme_bg">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
-                    <h3 class="small_heading">Installation and Runing Program MCG</h3>
-					<p>					
-						<br>1. extract zip file. ex: mcg_012-last_update-2022-07-13.zip
-						<br>2. copy directory installer
-						<br>3. go to directory installer and run SETUP.exe
-						<br>4. go to directory d:\MCG
-						<br>5. run exe file
-						<br>
-						<br>System will ask you select option <b>'Include sample data'</b>
-						<br>Select <b>no. 1</b> option if you no need sample files
-						<br><br>
-						<b>Note:</b> 
-						<br>Running this tool file will make .ini and generator.db files.
-						If you've ever installed MCG, first backup .ini and generator.db files or rename them
-					</p>					
-                </div>
-				
-                <div class="col-lg-6 col-md-6 col-sm-12 text_align_center">
-                    <div class="full">
-                        <img class="img-responsive" src="images/demo_sample_data1.jpg" alt="#" />
-						<br><br>
-						<img class="img-responsive" src="images/demo_sample_data2.jpg" alt="#" />
-						<br><br>
-						<img class="img-responsive" src="images/log_monitor_include_sample_data.jpg" alt="#" />
-                    </div>
-                </div>
-				
-            </div>
-        </div>
-    </div>
-    <!-- end section -->
-
-
-<br>
-    <!-- section -->
-    <div class="section layout_padding theme_bg">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
-                    <h3 class="small_heading">Setting and Licensed </h3>
-					<p>
-					go to 'Setting and Licensed' menu and set what you want.
-					<br>
-					Directory Output : blank option will save output script same with main program.
-					</p>
-                </div>
-
-                <div class="col-lg-6 col-md-6 col-sm-12 text_align_left white_fonts">
-                    <div class="full">
-						<p>Sample setting output for mcg_005:</p>
-                        <img class="img-responsive" src="images/setting_and_licensed_output_005.jpg" alt="#" />
-						<br><br><p>Sample setting output for mcg_012:</p>
-						<img class="img-responsive" src="images/setting_and_licensed_output_012.jpg" alt="#" />
-
-						<br><br><p>Register licensed type:</p>
-						<img class="img-responsive" src="images/setting_and_licensed_register.jpg" alt="#" />						
-						<br><br>
-						<b>Note:</b>
-						<br>Envato licensed type is reserved.
-						<br>Never share your register number to other people.						
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end section -->
-	
-	<br>
-    <!-- section -->
-    <div class="section layout_padding theme_bg">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
-                    <h3 class="small_heading">Make Massive CRUD data</h3>
-					
-					<p>
-						go to 'Source Data' menu. 
-						<br>There are 3 sections and you must fill every section.
-						<br>that sections are <b>Control-Menu, Grid-Menu, and Field-Menu.</b>
-					</p>
-
-					<br><br>
-					<h2 class="small_heading">Control Menu:</h2>
-					<p>
-					You are required to fill in the name of the file which will be the name of the output
-					</p>
-					<br><br>
-
-					<h2 class="small_heading">Grid Menu:</h2>
-					<p>
-						You are required to fill in the table name, the table name is used to store fields created in the Field-Menu.
-					</p>
-					
-					<br><br>
-					<h2 class="small_heading">Field Menu:</h2>
-					<p>
-						Fieldname must be filled with data, then select the appropriate fieldtype.
-						<br>Each table <b>must have ONE field</b> of type AUTOINC-PRIMARYKEY.
-						<br>A field of type AUTOINC-PRIMARYKEY is a field of type INTEGER.
-						<br>For the Attribute field, fill it with <b>HIDDEN</b> if Fieldtype is <b>AUTOINC-PRIMARYKEY</b>.
-					</p>
-					<br><br>
-
-
-<!-- from here! -->
-
-
-<h2 class="small_heading">Example of data entry:</h2>
-<ul>
-
-	<li>Data-1</li>
-	<ul>
-		<li><b>Control Menu:</b></li>
-		<ul>
-			<li>File Name: sex</li>
-			<li>Title: Tabel Sex</li>
-			<li>Menu Icon: fa-circle</li>
-			<li>Menu Folder: TABLE</li>
-			<li>Description: Tabel Sex</li>
-		</ul>
-		<br>
-
-		<li><b>Grid Menu:</b></li>
-		<ul>
-			<li>Tablename: sex</li>
-			<li>Title: sex</li>
-		</ul>
-		<br>
-
-		<li><b>Field Menu:</b></li>
-		<ul>
-			<li>Fieldname: sex_id</li>
-			<li>Fieldtype: AUTOINC-PRIMARYKEY</li>
-			<li>Attribute: HIDDEN</li>
-			<li>Title: Sex ID</li>
-		</ul>
-		<br>
-		<ul>
-			<li>Fieldname: sex_desc</li>
-			<li>Fieldtype: VARCHAR</li>
-			<li>Attribute: NORMAL</li>
-			<li>Title: Sex Description</li>
-			<li>Validation - Data Is Unique: {"y","Data double."}</li>
-			<li>Validation - Data Required: {"y","Data required."}</li>
-			<li>Show at Lookup: YES</li>
-		</ul>
-		<br>
-
-	</ul>
-	<br>
-
-	<li>Data-2</li>
-	<ul>
-		<li><b>Control Menu:</b></li>
-		<ul>
-			<li>File Name: edu</li>
-			<li>Title: Table Education Level</li>
-			<li>Menu Icon: fa-circle</li>
-			<li>Menu Folder: TABLE</li>
-			<li>Description: Table Education Level</li>
-		</ul>
-		<br>
-
-		<li><b>Grid Menu:</b></li>
-		<ul>
-			<li>Tablename: edu</li>
-			<li>Title: edu</li>
-		</ul>
-		<br>
-
-		<li><b>Field Menu:</b></li>
-		<ul>
-			<li>Fieldname: edu_id</li>
-			<li>Fieldtype: AUTOINC-PRIMARYKEY</li>
-			<li>Attribute: HIDDEN</li>
-			<li>Title: Edu ID</li>
-		</ul>
-		<br>
-		<ul>
-			<li>Fieldname: edu_code</li>
-			<li>Fieldtype: VARCHAR</li>
-			<li>Attribute: NORMAL</li>
-			<li>Title: Edu Code</li>
-			<li>Validation - Data Is Unique: {"y","Data double."}</li>
-			<li>Validation - Data Required: {"y","Data required."}</li>
-		</ul>
-		<br>
-		<ul>
-			<li>Fieldname: edu_desc</li>
-			<li>Fieldtype: VARCHAR</li>
-			<li>Attribute: NORMAL</li>
-			<li>Title: Edu Description</li>
-			<li>Validation - Data Required: {"y","Data required."}</li>
-			<li>Show at Lookup: YES</li>
-		</ul>
-		<br>
-
-	</ul>
-	<br>
-
-	<li>Data-3</li>
-	<ul>
-		<li><b>Control Menu:</b></li>
-		<ul>
-			<li>File Name: emp</li>
-			<li>Title: Employee</li>
-			<li>Menu Icon: fa-circle</li>
-			<li>Menu Folder: MASTER</li>
-			<li>Description: Employee</li>
-		</ul>
-		<br>
-
-		<li><b>Grid Menu:</b></li>
-		<ul>
-			<li>Tablename: emp</li>
-			<li>Title: emp</li>
-		</ul>
-		<br>
-
-		<li><b>Field Menu:</b></li>
-		<ul>
-			<li>Fieldname: emp_id</li>
-			<li>Fieldtype: AUTOINC-PRIMARYKEY</li>
-			<li>Attribute: HIDDEN</li>
-			<li>Title: Emp ID</li>
-		</ul>
-		<br>
-		<ul>
-			<li>Fieldname: emp_name</li>
-			<li>Fieldtype: VARCHAR</li>
-			<li>Attribute: NORMAL</li>
-			<li>Title: Emp Name</li>
-			<li>Show at Lookup: YES</li>
-		</ul>
-		<br>
-		<ul>
-			<li>Fieldname: emp_bday</li>
-			<li>Fieldtype: DATE</li>
-			<li>Attribute: NORMAL</li>
-			<li>Title: Birth Day</li>
-		</ul>
-		<br>
-		<ul>
-			<li>Fieldname: sex_id</li>
-			<li>Fieldtype: LOOKUP-COMBO</li>
-			<li>Attribute: HIDDEN</li>
-		</ul>
-		<br>
-		<ul>
-			<li>Fieldname: sex_desc</li>
-			<li>Fieldtype: RELATION</li>
-			<li>Attribute: NORMAL</li>
-		</ul>
-		<br>
-		<ul>
-			<li>Fieldname: edu_code</li>
-			<li>Fieldtype: LOOKUP-COMBO</li>
-			<li>Attribute: HIDDEN</li>
-		</ul>
-		<br>
-		<ul>
-			<li>Fieldname: edu_desc</li>
-			<li>Fieldtype: RELATION</li>
-			<li>Attribute: NORMAL</li>
-		</ul>
-		<br>
-
-	</ul>
-	<br>
-
-</ul>
-
-
-<!-- to here! -->
-
-
-					
-                </div>
-				
-                <div class="col-lg-6 col-md-6 col-sm-12 text_align_center">
-                    <div class="full">
-                        <img class="img-responsive" src="images/source_data.jpg" alt="#" />
-                    </div>
-                </div>
-				
-            </div>
-        </div>
-    </div>
-    <!-- end section -->
-	
-	<br>
-    <!-- section -->
-    <div class="section layout_padding theme_bg">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
-                    <h3 class="small_heading">Generate Code</h3>
-					<p>
-						Data will be craeated if no mistake in Source Data. You can see at Log Monitor.
-						<br>Fix your error, and repeat again this proccess.
-						<br>File result will be created at Directory Output.
-					</p>
-                </div>
-				
-                <div class="col-lg-6 col-md-6 col-sm-12 text_align_left white_fonts">
-                    <div class="full">
-                        <img class="img-responsive" src="images/generate.jpg" alt="#" />
-						<br><br>
-						<img class="img-responsive" src="images/log_monitor_generate.jpg" alt="#" />
-						
-						<br><br><br><br>
-						Output result to www directory for mcg_005:
-						<br><br>
-						<img class="img-responsive" src="images/output_result_005.jpg" alt="#" />
-                    </div>
-                </div>
-				
-            </div>
-        </div>
-    </div>
     <!-- end section -->	
-
-
-	<br>
-    <!-- section -->
-    <div class="section layout_padding theme_bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-6 col-sm-12 text_align_left white_fonts">
-                    <div class="full">
-					
-						<h3 class="small_heading">How to use SQL script result from MCG output</h3>
-						<p>
-							Open your favourite database-tool, create database and called name:<b> mcg_db</b>
-						</p>
-						<p>	
-							run or copy paste script from result MGC tool: <b>~merge_table_all.sql</b>
-						</p>
-                        <img class="img-responsive" src="images/run_table.jpg" alt="#" />
-						
-						<br><br>
-						<p>if you use PhpMyAdmin</p>
-						<img class="img-responsive" src="images/run_table_phpmyadmin.jpg" alt="#" />
-						
-						<br><br>
-						<p>run or copy paste <b>~merge_sql_all.sql</p>
-						<img class="img-responsive" src="images/run_sql.jpg" alt="#" />
-
-						<br><br>
-						<p>if you use PhpMyAdmin</p>
-						<img class="img-responsive" src="images/run_sql_phpmyadmin.jpg" alt="#" />
-						
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
-                    
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end section -->
-	
-	<br>
-    <!-- section -->
-    <div class="section layout_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-6 col-sm-12 text_align_left">
-                    <div class="full">
-					
-						<h3 class="small_heading">How to test SQL script result from MCG output</h3>
-						<p>
-							There are 2 ways for testing SQL script from MCG output
-						</p>	
-							<br><br><b>1. Common command:</b>
-
-<pre>
-
-INSERT INTO sex (sex_id, sex_desc) VALUES
-(1, 'Laki-laki'),
-(2, 'Perempuan');
-
-
-INSERT INTO edu (edu_id, edu_code, edu_desc) VALUES
-(1, 'TK', 'Taman Kanak-kanak'),
-(2, 'SD', 'Sekolah Dasar'),
-(3, 'SMP', 'Sekolah Menengah Pertama'),
-(4, 'SMU', 'Sekolah Menengah Umum'),
-(5, 'UNIV', 'Universitas');
-
-
-UPDATE sex SET
-	sex_desc='Male'
-WHERE 
-	sex_id=1
 		
-
-DELETE FROM sex
-WHERE 
-	sex_id=1
-
-
-SELECT sex.sex_id, sex.sex_desc
-FROM sex
-
-
-</pre>
-
-<br><br><b>2. Calling script result from MCG output:</b>
-<pre>
-
-CALL sex_one_add(1, 'Laki-laki');
-CALL sex_one_add(2, 'Perempuan');
-
-CALL sex_one_edit(1, 'Male');
-
-CALL sex_one_delete(1);
-
-SELECT * from  sex_one_view;
-
-</pre>
-	
-
-<br><br><b>if you use PhpMyAdmin</b>
-						<br><br>
-						
-						<img class="img-responsive" src="images/run_call_sex_add_phpmyadmin.jpg" alt="#" />
-						
-<br><br><b>Note: </b>you must create MySql database and called name:<b> mcg_db</b>
-
-
-
-						
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6 col-sm-12 white_fonts">
-                    
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end section -->
-	
-	
     <!-- section -->
+	<!--
     <div class="section layout_padding theme_bg">
         <div class="container">
             <div class="row">
@@ -695,10 +736,12 @@ SELECT * from  sex_one_view;
             </div>
         </div>
     </div>
+	-->
     <!-- end section -->
 	
 	
     <!-- section -->
+	<!--
     <div class="section layout_padding">
         <div class="container">
             <div class="row">
@@ -748,10 +791,12 @@ Then restart your web server.
             </div>
         </div>
     </div>
+	-->
     <!-- end section -->
 
 
     <!-- section -->
+	<!--
     <div class="section layout_padding">
         <div class="container">
             <div class="row">
@@ -788,10 +833,12 @@ Then restart your web server.
             </div>
         </div>
     </div>
+	-->
     <!-- end section -->
 
 
     <!-- section -->
+	<!--
     <div class="section layout_padding">
         <div class="container">
             <div class="row">
@@ -841,6 +888,7 @@ Then restart your web server.
             </div>
         </div>
     </div>
+	-->
     <!-- end section -->
 	
 	<!--  ------------------------------------------------------------------------- -->
